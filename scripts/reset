@@ -1,0 +1,20 @@
+-- *****************************************************************************
+-- * Reset Database
+-- *****************************************************************************
+DROP DATABASE devinfa1_spellsword;
+CREATE DATABASE devinfa1_spellsword;
+USE devinfa1_spellsword;
+
+-- *****************************************************************************
+-- * Run other scripts in order
+-- *****************************************************************************
+\. create_schema.sql
+\. add_experience.sql
+\. add_elements.sql
+\. add_locations.sql
+\. add_weapons.sql
+\. add_armor.sql
+\. add_items.sql
+\. add_enemies.sql
+\. add_quests.sql
+\. my_character.sql

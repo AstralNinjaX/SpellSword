@@ -1,0 +1,7 @@
+-- Show the enemies table with apropriate element name and location
+SELECT enemy_id AS ID, enemy_name, enemy_level AS level, enemy_description AS description,
+    element_name AS element, location_name AS location, enemy_strength AS str, enemy_magic AS mag,
+    enemy_defense AS def, enemy_barrier AS bar, enemy_max_health AS max_hp, enemy_experience AS exp, enemy_is_boss AS boss
+    FROM Enemies JOIN Elements ON (element_id = enemy_element) JOIN Enemy_Locations ON (EL_enemy_id = enemy_id)
+    JOIN Locations ON (EL_location_id = location_id) ORDER BY enemy_id;
+    
