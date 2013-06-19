@@ -2394,3 +2394,7 @@ INSERT INTO Enemy_Locations SELECT enemy_id, location_id, '0' FROM Enemies JOIN 
 
 INSERT INTO Battle_Loot SELECT enemy_id, item_id, '1', '100' FROM Enemies JOIN Items
 	WHERE enemy_name = 'Chicken' AND item_name = 'Moolah';
+
+-- -----------------------------------------------------------------------------
+-- Need More Loot
+-- -----------------------------------------------------------------------------

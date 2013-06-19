@@ -21,6 +21,10 @@ INSERT INTO Items (item_name, item_description) VALUES ('Basic Health Potion', '
 INSERT INTO Usable_Items SELECT item_id, '1', '3', effect_id, TRUE FROM Items JOIN Effects
     WHERE item_name = 'Basic Health Potion' and effect_name = 'Restore Health';
 
+-- -----------------------------------------------------------------------------
+-- Need More Items
+-- -----------------------------------------------------------------------------
+
 -- *****************************************************************************
 -- * Add Random Items
 -- *****************************************************************************
@@ -28,8 +32,16 @@ INSERT INTO Usable_Items SELECT item_id, '1', '3', effect_id, TRUE FROM Items JO
 INSERT INTO Items (item_name, item_description) VALUES
     ('Horn of the Unicorn', 'Hard to describe.');
 
+-- -----------------------------------------------------------------------------
+-- Need More Items
+-- -----------------------------------------------------------------------------
+
 -- *****************************************************************************
 -- * Add Items to Shops
 -- *****************************************************************************
 
 INSERT INTO Shop_Items SELECT location_id, item_id, '10' FROM Locations JOIN Items WHERE location_name = 'Forestglade' AND item_name = 'Basic Health Potion';
+
+-- -----------------------------------------------------------------------------
+-- Need More Items
+-- -----------------------------------------------------------------------------

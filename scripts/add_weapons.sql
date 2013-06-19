@@ -65,3 +65,7 @@ INSERT INTO Weapons (weapon_item_id, weapon_element, weapon_starting_level, weap
 INSERT INTO Items (item_name, item_description) VALUES ('Morning Star', 'Mace that shines brightly in darkness');
 INSERT INTO Weapons (weapon_item_id, weapon_element, weapon_starting_level, weapon_starting_strength, weapon_starting_magic, weapon_starting_max_condition)
     SELECT item_id, element_id, '3', '3', '1', '15' FROM Items JOIN Elements WHERE item_name = 'Morning Star' and element_name = 'Light';
+
+-- -----------------------------------------------------------------------------
+-- Need More Weapons
+-- -----------------------------------------------------------------------------

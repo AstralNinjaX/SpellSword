@@ -17,3 +17,7 @@ INSERT INTO Armor (armor_item_id, armor_element, armor_starting_level, armor_sta
 INSERT INTO Items (item_name, item_description) VALUES ('Rock Armor', 'Armor that blocks both earth and physical damage');
 INSERT INTO Armor (armor_item_id, armor_element, armor_starting_level, armor_starting_defense, armor_starting_barrier, armor_starting_max_condition, armor_starting_max_health)
     SELECT item_id, element_id, '1', '1', '1', '5', '20' FROM Items JOIN Elements WHERE item_name = 'Rock Armor' and element_name = 'Earth';
+
+-- -----------------------------------------------------------------------------
+-- Need More Armor
+-- -----------------------------------------------------------------------------

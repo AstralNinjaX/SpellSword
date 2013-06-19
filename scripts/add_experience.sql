@@ -69,9 +69,16 @@ INSERT INTO Hero_Experience (level_from, level_to, experience_needed) VALUES
 INSERT INTO Weapon_Experience (level_from, level_to, experience_needed) VALUES
     ('0', '1', '0');
 
+-- -----------------------------------------------------------------------------
+-- Need More Weapon Experience
+-- -----------------------------------------------------------------------------
+
 -- *****************************************************************************
 -- * Add Armor Experience
 -- *****************************************************************************
 INSERT INTO Armor_Experience (level_from, level_to, experience_needed) VALUES
     ('0', '1', '0');
-    
+
+-- -----------------------------------------------------------------------------
+-- Need More Armor Experience
+-- -----------------------------------------------------------------------------
