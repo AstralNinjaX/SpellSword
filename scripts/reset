@@ -1,9 +1,9 @@
 -- *****************************************************************************
 -- * Reset Database
 -- *****************************************************************************
-DROP DATABASE devinfa1_spellsword;
-CREATE DATABASE devinfa1_spellsword;
-USE devinfa1_spellsword;
+DROP DATABASE IF EXISTS spellsword;
+CREATE DATABASE spellsword;
+USE spellsword;
 
 -- *****************************************************************************
 -- * Run other scripts in order
